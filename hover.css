@@ -1,0 +1,47 @@
+
+a:link {
+    color: red;
+    text-decoration: none;
+}
+
+a:visited {
+    color: black;
+}
+
+.customer {
+    height: 300px;
+    background:  #fff url(/images/receipt.jpg) no-repeat center;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+
+.customer-h3 {
+    line-height: 300px;
+    font-size: 32px;
+    text-align: center;
+}
+
+.hover-text {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(239, 9, 9, .75);
+    color: #fff;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity .2s, visibility .2s;
+}
+
+.customer:hover .hover-text {
+    visibility: visible;
+    opacity: 1;
+}
+
+.desc {
+    padding: 125px 20px 20px;
+    text-align: center;
+}
